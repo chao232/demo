@@ -4,10 +4,12 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 
 @Entity
 @Data
+@Table(name="productInfo")
 public class ProductInfo {
 
     @Id
@@ -28,8 +30,8 @@ public class ProductInfo {
     /** 小图. */
     private String productIcon;
 
-//    /** 状态, 0正常1下架. */
-//    private Integer productStatus;
+    /** 状态, 0正常1下架. */
+    private Integer productStatus;
 
     /** 类目编号. */
     private Integer productType;
