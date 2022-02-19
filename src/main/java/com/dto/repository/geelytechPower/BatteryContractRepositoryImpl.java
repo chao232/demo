@@ -1,7 +1,7 @@
-//package com.dto.repository.geelytechPower;
+//package com.dto.repository.power;
 //
 //
-//import com.dto.model.geelytechPower.BatteryContract;
+//import com.dto.model.power.BatteryContract;
 //import org.hibernate.query.internal.NativeQueryImpl;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.stereotype.Repository;

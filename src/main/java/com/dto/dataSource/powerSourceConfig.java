@@ -17,7 +17,7 @@
 //
 //@Configuration
 //@EnableTransactionManagement
-//@EnableJpaRepositories(basePackages = "com.dto.repository.geelytechPower",
+//@EnableJpaRepositories(basePackages = "com.dto.repository.power",
 //        entityManagerFactoryRef = "localContainerEntityManagerFactoryBeanPower",
 //        transactionManagerRef = "platformTransactionManagerPower")
 //public class powerSourceConfig {
@@ -34,7 +34,7 @@
 //    LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBeanPower(EntityManagerFactoryBuilder builder){
 //        return builder.dataSource(powerDataSource)
 //                .properties(jr.getProperties())
-//                .packages("com.dto.model.geelytechPower")
+//                .packages("com.dto.model.power")
 //                .persistenceUnit("pu1")
 //                .build();
 //

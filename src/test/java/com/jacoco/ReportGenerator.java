@@ -92,8 +92,7 @@ public class ReportGenerator {
         ExecutionDataStore executionDataStore = execFileLoader.getExecutionDataStore();
         Collection<ExecutionData> contents = executionDataStore.getContents();
         for (ExecutionData content : contents) {
-            if(content.getName().equals("com/tech/geely/assets/service/VehicleService")){
-//                if(content.getName().equals("com/tech/geely/user/service/DriverService")){
+            if(content.getName().equals("com/*")){
                 boolean[] probes = content.getProbes();
                 int i=0;
                 for (boolean probe : probes) {

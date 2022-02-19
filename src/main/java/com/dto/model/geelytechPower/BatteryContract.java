@@ -1,4 +1,4 @@
-//package com.dto.model.geelytechPower;
+//package com.dto.model.power;
 //
 //import lombok.Data;
 //import lombok.experimental.Accessors;

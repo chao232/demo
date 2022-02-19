@@ -1,5 +1,5 @@
-//package com.dto.repository.geelytechPower;
-//import com.dto.model.geelytechPower.BatteryContract;
+//package com.dto.repository.power;
+//import com.dto.model.power.BatteryContract;
 //import org.springframework.data.jpa.repository.JpaRepository;
 //import org.springframework.data.jpa.repository.Query;
 //import org.springframework.stereotype.Repository;

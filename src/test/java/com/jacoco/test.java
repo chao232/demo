@@ -10,8 +10,8 @@ public class test {
 //                    args[i]));
 //            generator.create();
 //        }
-        File file = new File("/Users/yyhl/ds/dsproject/geelytech-bizos/bizos-saas/geelytech-power/assets-api/assets-api-api");
-//        File file = new File("/Users/yyhl/ds/dsproject/geelytech-bizos/bizos-saas/geelytech-power/user-api/user-api-api");
+        File file = new File("/Users/");
+//        File file = new File("/Users/");
 
         final ReportGenerator generator = new ReportGenerator(file);
         generator.create();

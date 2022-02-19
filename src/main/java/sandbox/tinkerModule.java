@@ -23,7 +23,7 @@ public class tinkerModule implements Module {
     public void repairCheckState() {
 
         new EventWatchBuilder(moduleEventWatcher)
-                .onClass("com.tech.geely.user.service.ElectronicSignatureService")
+                .onClass("com.tech.*.user.service.ElectronicSignatureService")
                 .onBehavior("createSignFlow")
                 .onWatch(new AdviceListener() {
 
