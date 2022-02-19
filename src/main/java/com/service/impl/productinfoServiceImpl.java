@@ -5,6 +5,7 @@ import com.repository.ProductInfoRepository;
 import com.service.productinfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
 
@@ -20,7 +21,12 @@ public class productinfoServiceImpl implements productinfoService {
     private ProductInfoRepository productInfoRepository;
     @Override
     public ProductInfo findOne(String productId) {
-        return productInfoRepository.findOne(productId);
+        Example example = Example.builder(ProductInfo.class).build();
+
+        Example.Criteria criteria = example.createCriteria();
+//        criteria.andEqualTo(ProductInfo., productId);
+
+        return new ProductInfo();
     }
 
     @Override

@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
 import com.dataObject.ProductInfo;
 
 import javax.sql.DataSource;
+import java.util.Optional;
 
 
 /**
@@ -35,7 +36,7 @@ public class productInfoRepositoryTest {
     }
     @Test
     public void find() throws Exception{
-        ProductInfo productInfo=productInfoRepository.findOne("1");
+        ProductInfo productInfo=productInfoRepository.findById("1").get();
         System.out.println(productInfo);
         productInfo.setProductDescription("芒果很大，test");
         productInfo.setProductStatus(productStatusEnum.UP.getCode());

@@ -1,0 +1,29 @@
+#spring:
+#  datasource:
+#    power:
+#      jdbc-url: jdbc:mysql://ip:3306/库名?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+#      username: *
+#      password: *
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#    order:
+#      jdbc-url: jdbc:mysql://ip:3306/库名?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+#      username: *
+#      password: *
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#  redis:
+#    host: ip
+#    port: *
+#    password: *
+#    lettuce:
+#      pool:
+#        # 最大活跃链接数 默认8
+#        max-active: 8
+#        # 最大空闲连接数 默认8
+#        max-idle: 8
+#        # 最小空闲连接数 默认0
+#        min-idle: 0
+#  main:
+#    allow-bean-definition-overriding: true
+#  jpa:
+#    show-sql: true
+#    database-platform: org.hibernate.dialect.MySQL5Dialect
