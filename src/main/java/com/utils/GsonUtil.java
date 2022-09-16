@@ -6,15 +6,26 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
+import java.math.BigDecimal;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 import java.util.Map;
 
 public class GsonUtil {
 
 
-     public static Gson gson = null;
-
-     static JsonParser jsonParser = null;
+    public static  Gson gson = new GsonBuilder()
+            .registerTypeAdapter(LocalDateTime.class, new JsonDeserializer<LocalDateTime>() {
+                @Override
+                public LocalDateTime deserialize(JsonElement json, Type type, JsonDeserializationContext jsonDeserializationContext) throws org.springframework.boot.json.JsonParseException {
+                    long timestamp = new BigDecimal(json.getAsJsonPrimitive().getAsDouble()).longValue();
+                    return LocalDateTime.ofInstant(Instant.ofEpochMilli(timestamp), ZoneId.systemDefault());
+                }
+            }).create();
+    static JsonParser jsonParser = null;
 
     /**
      * 判断gson对象是否存在了,不存在则创建对象

@@ -13,7 +13,7 @@ import java.util.List;
 public class CreateCsv {
 
     public void createFile() throws Exception{
-        String path="/Users/yyhl/Downloads/";
+        String path="/Users/Downloads/";
         String fileName=path.concat("text的副本3.csv");
         int num=1000;
         File csvFile = new File(fileName);
@@ -43,18 +43,6 @@ public class CreateCsv {
 
         csvWriter.write("#-----------------------------------------业务明细列表结束------------------------------------");
         csvWriter.newLine();
-
-        csvWriter.write("#交易合计：10374笔，商家实收共28790.16元，商家优惠共0.00元");
-        csvWriter.newLine();
-
-        csvWriter.write("#退款合计：1笔，商家实收退款共-3000.00元，商家优惠退款共0.00元");
-        csvWriter.newLine();
-
-        csvWriter.write("#导出时间：[2021年10月22日 06:27:10]");
-        csvWriter.newLine();
-
-        csvWriter.flush();
-        csvWriter.close();
 
     }
     @Test

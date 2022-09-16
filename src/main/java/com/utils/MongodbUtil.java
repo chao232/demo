@@ -30,10 +30,10 @@ import java.util.Map;
 public class MongodbUtil {
 
     // old test
-    private static final String OLD_URI = "mongodb://mongoadmin:lEshIrmaKEY@ip:port/datasoucename?authSource" +
+    private static final String OLD_URI = "mongodb://mongoadmin:密码@ip:port/datasoucename?authSource" +
             "=admin&authMechanism=SCRAM-SHA-1";
     // future test
-    private static final String FUTURE_URI = "mongodb://root:xCAL2vXu2@ip:port/datasoucename?authSource=admin";
+    private static final String FUTURE_URI = "mongodb://root:密码@ip:port/datasoucename?authSource=admin";
 
 
     static MongoTemplate create(String mongoUri) {

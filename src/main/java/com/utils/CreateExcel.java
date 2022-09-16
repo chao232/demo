@@ -11,8 +11,8 @@ import java.io.FileOutputStream;
 public class CreateExcel {
      
      public void createFile() throws Exception{
-          String path="/Users/yyhl/Downloads/";
-          String fileName=path.concat("车辆导入模版.xls");
+          String path="/Users/Downloads/";
+          String fileName=path.concat("导入模版.xls");
           int numStart=27000;  //i从起numStart，截止到numEnd
           int numEnd=30000;
           FileInputStream fileInputStream = new FileInputStream(fileName);
@@ -26,24 +26,9 @@ public class CreateExcel {
 
           for(int i=1;i<numEnd-numStart+1;i++){
                Row row = sheet.createRow(i);
-               String vin="LLV5DSDS0S".concat(StringUtil.addZeroForNum(String.valueOf(numStart+i),7));
-               String batteryCode = "03HPE038000DSDSDS".concat(StringUtil.addZeroForNum(String.valueOf(numStart+i),7));
-               row.createCell(0).setCellValue(vin);
-               row.createCell(2).setCellValue(vin);
-               row.createCell(3).setCellValue("枫叶80V VP");
-               row.createCell(4).setCellValue("易易互联科技有限公司");
-               row.createCell(5).setCellValue("网约车");
-               row.createCell(6).setCellValue(batteryCode);
-               row.createCell(7).setCellValue("2022-02-18");
-               row.createCell(8).setCellValue("2022-02-18");
-               row.createCell(9).setCellValue("2022-02-18");
-               row.createCell(10).setCellValue("启用");
-               row.createCell(11).setCellValue("2022-02-18");
-               row.createCell(12).setCellValue("三元材料电池");
-               row.createCell(13).setCellValue("是");
-               row.createCell(14).setCellValue("枫盛汽车科技");
-               row.createCell(15).setCellValue("B类");
-               row.createCell(16).setCellValue("杭州市");
+               String a="1".concat(StringUtil.addZeroForNum(String.valueOf(numStart+i),7));
+               row.createCell(0).setCellValue(a);
+               row.createCell(2).setCellValue(a);
 
 
 //               row.createCell(1).setCellValue(row.getCell(0).getStringCellValue());

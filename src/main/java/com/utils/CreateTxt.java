@@ -23,7 +23,7 @@ public class CreateTxt {
 
     @Test
     public void testWriteToTxt() {
-        String folder = "/Users/yyhl/Downloads/";
+        String folder = "/Users/Downloads/";
         String file = "vinCode.txt";
         List<String> messageList = new ArrayList<>();
           for(int i=1;i<3000;i++){
